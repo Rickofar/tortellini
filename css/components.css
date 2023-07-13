@@ -105,7 +105,11 @@ nav div {
 .todays-update input {
 	text-align: center;
 	margin: 20px auto;
-	padding: 10px 20px;
+	padding: 15px 20px;
+	font-size: 16px;
+	border: none;
+	box-shadow: 0px 0px 10px #333;
+	border-radius: 5px;
 }
 
 @media (max-width: 815px) {
