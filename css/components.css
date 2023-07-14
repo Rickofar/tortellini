@@ -13,6 +13,24 @@ header {
 	height: 60px;
 }
 
+.cart {
+	display: flex;
+	position: absolute;
+	color: #fff;
+	right: 0;
+	margin: 25px 30px;
+	cursor: pointer;
+}
+
+.cart p {
+	position: inherit;
+	margin: -10px 25px;
+}
+
+.cart img {
+	height: 35px;
+}
+
 nav {
 	display: flex;
 	justify-content: space-evenly;
@@ -92,6 +110,7 @@ nav div {
 .food-item-details button {
 	cursor: pointer;
 	background: #333;
+	color: #fff;
 	padding: 15px 20px;
 	border-radius: 5px;
 	border: none;
@@ -136,6 +155,18 @@ nav div {
 }
 
 @media (max-width: 520px) {
+	.cart {
+		margin: 30px 25px;
+	}
+
+	.cart p {
+		margin: -10px 20px;
+	}
+
+	.cart img {
+		height: 28px;
+	}
+
 	nav {
 		font-size: 15px;
 	}
@@ -152,6 +183,21 @@ nav div {
 		width: 130px;
 		font-size: 12px;
 		padding: 15px;
+	}
+}
+
+@media (max-width: 400px) {
+	.cart {
+		margin: 35px 10px;
+	}
+
+	.cart p {
+		font-size: 13px;
+		margin: -10px 18px;
+	}
+
+	.cart img {
+		height: 25px;
 	}
 }
 
@@ -175,6 +221,14 @@ nav div {
 		padding: 10px;
 	}
 }
+
+.clock {
+	font-size: 32px;
+	text-align: center;
+	margin: 20px;
+}
+
+
 
 footer {
 	position: relative;
