@@ -16,6 +16,10 @@
 					><img src="./img/logo/logo.png" alt="site-logo"
 				/></a>
 			</div>
+			<div class="cart">
+				<p class="cart-quantity">0</p>
+				<img src="./img/icons/cart-icon.png" alt="" />
+			</div>
 		</header>
 		<nav>
 			<div onclick="menu()"><a href="#menu" class="menu button">Menu</a></div>
@@ -55,6 +59,8 @@
 				<button onclick="menu()" class="menuBtn">Menu</button>
 			</div>
 
+			<div id="cart">Cart</div>
+
 			<div class="todays-menu-container">
 				<div class="todays-update" id="special">
 					<h3>
@@ -62,11 +68,12 @@
 						Check Our Special Meals For Today
 					</h3>
 					<button onclick="todaysMenu()" class="menuBtn2">Today's Menu</button>
-					<!-- <input type="datetime-local" value="" /> -->
+					<div class="clock" id="clock"></div>
 				</div>
 				<div class="todays-menu-list"></div>
 			</div>
 		</div>
+
 		<footer>
 			<div class="footer-links">
 				<a href="https://facebook.com" target="_blank"
@@ -90,7 +97,9 @@
 			/></a>
 			<p>&copy; 2023 | All Rights Reserved</p>
 		</footer>
+		<script src="./js/cart.js"></script>
 		<script src="./js/food.js"></script>
-		<script src="./js/script.js"></script>
+		<script src="./js/food-html.js"></script>
+		<script src="./js/tortellini.js"></script>
 	</body>
 </html>
