@@ -22,7 +22,6 @@ function menu() {
 
 //breakfast
 let breakfastHTML = " ";
-// data-breakfast="${breakfastLists}"
 breakfastLists.forEach((breakfastLists) => {
 	breakfastHTML += `		
   <div class="food-content-details">
@@ -32,9 +31,7 @@ breakfastLists.forEach((breakfastLists) => {
         <h3>${breakfastLists.category}</h3>
           <p class="name limit-text-to-2-lines">${breakfastLists.name}</p>
           <p>&#x20A6;${breakfastLists.price / 100}</p>
-          <button class="add-to-cart add-breakfast" onclick="addBreakfast()" data-breakfast="${
-						breakfastLists.id
-					}">Order</button>
+          <button><a href="https://wa.me/23493831118" target="_blank">Chat to Order</a></button>
         </div>
     </div>
   </div>`;
@@ -59,7 +56,8 @@ lunchLists.forEach((lunchLists) => {
         <div class="details">
         <h3>${lunchLists.category}</h3>
         <p class="name limit-text-to-2-lines">${lunchLists.name}</p>
-        <p>&#x20A6;${lunchLists.price / 100}</p>
+        <p>&#x20A6;${lunchLists.price / 100}</p>        
+        <button><a href="https://wa.me/23493831118" target="_blank">Chat to Order</a></button>
       </div>
     </div>
   </div>`;
@@ -86,6 +84,7 @@ dinnerLists.forEach((dinnerLists) => {
         <h3>${dinnerLists.category}</h3>
         <p class="name limit-text-to-2-lines">${dinnerLists.name}</p>
         <p>&#x20A6;${dinnerLists.price / 100}</p>
+        <button><a href="https://wa.me/23493831118" target="_blank">Chat to Order</a></button>
       </div>
     </div>
   </div>`;
@@ -111,6 +110,7 @@ todaysMenuLists.forEach((todaysMenuLists) => {
           <h4>${todaysMenuLists.category}</h4>
           <p class="limit-text-to-1-line">${todaysMenuLists.name}</p>
           <p>&#x20A6;${todaysMenuLists.price / 100}</p>
+          <button><a href="https://wa.me/23493831118" target="_blank">Chat to Order</a></button>
         </div>      
       </div>
     `;
@@ -120,7 +120,7 @@ function todaysMenu() {
 	document.querySelector(".todays-menu-list").innerHTML = todaysMenuHTML;
 }
 
-// <button><a href="https://wa.me/2348179290343">Chat to Order</a></button>
+// <button><a href="https://wa.me/23493831118" target="_blank">Chat to Order</a></button>
 
 // <button class="add-to-cart add-lunch" data-product-id="${}">Order</button>
 
