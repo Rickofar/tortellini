@@ -4,7 +4,7 @@ function addBreakfast() {
 	const button = document
 		.querySelectorAll(".add-breakfast")
 		.forEach((button) => {
-			button.dataset[((i = 0), i < button.dataset.length, i++)];
+			button.dataset;
 			const breakfastItems = button.dataset.breakfast;
 
 			console.log(breakfastItems);
